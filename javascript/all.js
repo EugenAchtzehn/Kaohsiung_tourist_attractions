@@ -12,8 +12,8 @@ var selectArea = document.getElementById("selectArea");
 
 // 選取要監聽的每頁顯示量選單
 var selectItemPerPage = document.getElementById("selectItemPerPage");
-// 定義每頁可以容納的景點數量(初始值為所有頁面)
-var itemPerPage = Infinity;
+// 定義每頁可以容納的景點數量(初始值為 10 筆)
+var itemPerPage = 10;
 // 選取頁碼相關元素
 var prev = document.getElementById("prev");
 var next = document.getElementById("next");
