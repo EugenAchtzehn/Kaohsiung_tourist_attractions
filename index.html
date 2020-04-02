@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kaohsiung Tourism</title>
+    <link rel="stylesheet" href="css/all.css">
+
+    <!-- Import fontAwesome -->
+    <script src="https://kit.fontawesome.com/210f09aba9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="bg-img bg-header d-flex direction-vertical align-center">
+            <h1>高雄旅遊資訊</h1>
+            <select name="selectArea" id="selectArea">
+            </select>
+        </header>
+        <div class="popularDistrict">
+            <p class="mb-3 fw-bold">熱門行政區：</p>
+            <button class="btn btn-1st">苓雅區</button>
+            <button class="btn btn-2nd">三民區</button>
+            <button class="btn btn-3rd">新興區</button>
+            <button class="btn btn-4th">美濃區</button>
+        </div>
+        <div class="white-line-element">
+            <i class="fas fa-chevron-down"></i>
+            <hr>
+        </div>
+        <main>
+            <div class="main-head">
+                <h2 id="areaTitle">所有行政區</h2>
+                <select name="selectItems" id="selectItemPerPage">
+                    <option value="10">10筆</option>
+                    <option value="20">20筆</option>
+                    <option value="Infinity" selected>所有筆數</option>
+                </select>
+                <div class="clearfix"></div>
+            </div>
+            <section id="attractionSec" class="d-flex">
+            </section>
+            <section id="pageNumSec" class="d-flex justify-center">
+                <p id="prev">&lsaquo;</p>
+                <p id="pagination">1</p>
+                <p id="next">&rsaquo;</p>
+            </section>
+        </main>
+        <footer>
+            <p class="text-white">高雄旅遊網</p>
+            <p class="text-source">資料來源：高雄市政府</p>
+            <p class="text-navy">Designed by HexSchool</p>
+            <p class="pb-3 text-navy">Made by Eugene Tseng</p>
+        </footer>
+    </div>
+    <script src="data/datastore.json"></script>
+    <script src="javascript/all.js"></script>
+</body>
+
+</html>
